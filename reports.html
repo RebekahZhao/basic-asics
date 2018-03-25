@@ -52,9 +52,67 @@
     </header>
 
     <div class="container">
+      <div class="col-sm-12"style="background-color:lightblue;">
+      <h2 style="font-size: 30px; margin-top: 100px;">Weekly Update 3/8/2018</h2>
+      <div class="row vdivide">
+           <div class="col-sm-4">
+             <h1 style="font-size: 20px; text-align:center; margin-top:50px;">Rebekah</h1>
+            <p>This week I was I was sick the majority of time. Therefore I was
+              unable to contribute much. I did hand calculation of the current
+              controlled oscillator and tested the performance of the CCO. Cody and I
+              were able to extract information from simulation and decide specs
+              for other components. I also wrote the website for our team.</p>
+            <p> What I plan to do the upcoming week: help Cody write verilog for
+              the system and finalize spec for each component. I would also like
+              to help Anil work on improving the classification accuracy and optimizing
+              the algorithm so it best simulates our system</p>
+           </div>
+           <div class="col-sm-4">
+             <h1 style="font-size: 20px; text-align:center; margin-top:50px;">Cody</h1>
+            <p>This week I've worked on the digital components and worked with Rebekah on
+              characterizing each component to determine what specs we want to use (eg.
+              number of window counters per channel, current range of DAC, working current
+              range of CCO etc). In addition, I've started writing the verilog for modeling
+              our circuit.</p>
+            <p>I also wrote some Matlab starter code to help Anil get started with
+              programming. We discussed in detail how to manipulate the neural data
+              we acquired online.</p>
+            <p>Next week I will work with Rebekah to finish the verilog model of system</p>
+           </div>
+           <div class="col-sm-4">
+             <h1 style="font-size: 20px; text-align:center; margin-top:50px;">Anil</h1>
+            <p>What I’ve done this week</p>
+            <ul>
+              <li>Write Python / Matlab code to process data from M1 neural data
+                in the monkey dataset</li>
+              <li>Write Python code to improve understanding of how the control
+                signals coming from the DSP works in the context of the window counter
+                circuit (ended up not completing and moved onto other things when I had a
+                better understanding of it)</li>
+              <li>Feed processed data into ELM algorithm and test to see what results we’re getting</li>
+              <li>Play with hyperparameters such as p (the number of window counter
+                delays, which also changes the input vector size for the ELM),
+                D (the number of hidden nodes in the ELM), time_bins (the size
+                of time bin used for counting neuron firings when processing the data).</li>
+              <li>Experimented with both multi-output regressional ELM (trying to predict
+                x and y velocity using regression) and multi-class classification ELM types
+                (directional detection discretized into n classes, I used n = {2, 4, 8} while
+                experimenting) to evaluate performance metrics. Tried changing the number of classes
+                to see its affect on classification accuracy.</li>
+            </ul>
+
+            <p>My plan is to write another Matlab script that sweeps possible values
+              for hyperparameters as well and evaluates performance and picks out the
+              optimal hyperparameters when run for a long time (e.g. overnight).</p>
+           </div>
+         </div>
+         <h1 style="font-size: 20px; text-align:center; margin-top:50px;">Team</h1>
+        <p style="text-align:center;">Together as a team, we worked on the design proposal.<p/>
+       </div>
+
 
       <div class="col-sm-12"style="background-color:lightgreen;">
-        <h2 style="font-size: 30px; margin-top: 100px;">Weekly Update 3/8/2018</h2>
+        <h2 style="font-size: 30px; margin-top: 100px;">Weekly Update 3/22/2018</h2>
         <div class="row vdivide">
           <div class="col-sm-4">
             <h1 style="font-size: 20px; text-align:center; margin-top:50px;">Rebekah</h1>
