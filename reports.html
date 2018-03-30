@@ -142,6 +142,59 @@
           </div>
         </div>
       </div>
+
+
+        <div class="col-sm-12"style="background-color:lightpink;">
+          <h2 style="font-size: 30px; margin-top: 100px;">Weekly Update 3/29/2018</h2>
+          <div class="row vdivide">
+            <div class="col-sm-4">
+              <h1 style="font-size: 20px; text-align:center; margin-top:50px;">Rebekah</h1>
+              <p>This week I worked with Anil on studying the power consumption specificattions
+                with respect to the algorithm's tolerance. At first we roughly calculated the power
+                consumption from simply scaling the process and found out that to
+                meet the power requirement of the paper we need to reduce drain current.
+                However, after running simulation I found out that the threshold
+                voltage of the transistor is too high. Therefore we have decided to
+                operate in subthreshold to achieve power consumption in nano Watts range.
+
+                I also ran Monte Carlo simulation on current mirrors to characterize 
+                the standard deviation of process mismatch parameters. Anil has been
+                running simulation with the data I provided. Once we collaborative solve
+                this problem we will be able to plug this into our verilog model.
+
+                Looking forward I will be studying sub-threshold circuit design</p>
+            </div>
+            <div class="col-sm-4">
+              <h1 style="font-size: 20px; text-align:center; margin-top:50px;">Cody</h1>
+              <p>This week I worked with Anil and Rebekah to figure out the power problem.
+                Although we haven't solved it completely, we're on the right track and
+                are starting to understand the steps we need to take in order to
+                significantly reduce our power consumption (how much we can reduce
+                Vdd by, size of current mirror array, etc).
+
+                Also, this week I've worked on the verilog model. The window counter
+                is tested and verified, and now I'm working on the CCO model.</p>
+            </div>
+            <div class="col-sm-4">
+              <h1 style="font-size: 20px; text-align:center; margin-top:50px;">Anil</h1>
+              <p>This week I’ve continued working on MATLAB, but now for a different
+                analysis, Rebekah and I figured out that our current mirrors placed
+                a random distribution of weights not around 0 but around 1, and I have
+                been running MATLAB simulations to see how this change affects our
+                decoding accuracy (it very significantly affects negatively unfortunately).
+                I have been trying to come up with the reasons why this is happening
+                and a possible solution for it. So far I have enough data to support
+                the notion that this is happening due to all the data being stuck
+                on a low gradient portion of the sigmoid function (used as activation
+                function in hidden layer and implemented by CCO). I’m in the process
+                of adjusting the steepness and the center of this sigmoid function to
+                better improve the decoding accuracy and hence coming up with necessary
+                restrictions (design parameters) for the CCO.</p>
+            </div>
+          </div>
+
+        </div>
+
     </div>
 
 
