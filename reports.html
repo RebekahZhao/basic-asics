@@ -157,7 +157,7 @@
                 voltage of the transistor is too high. Therefore we have decided to
                 operate in subthreshold to achieve power consumption in nano Watts range.
 
-                I also ran Monte Carlo simulation on current mirrors to characterize 
+                I also ran Monte Carlo simulation on current mirrors to characterize
                 the standard deviation of process mismatch parameters. Anil has been
                 running simulation with the data I provided. Once we collaborative solve
                 this problem we will be able to plug this into our verilog model.
@@ -194,6 +194,42 @@
           </div>
 
         </div>
+
+        <div class="col-sm-12"style="background-color:lightyellow;">
+          <h2 style="font-size: 30px; margin-top: 100px;">Weekly Update 4/5/2018</h2>
+          <div class="row vdivide">
+            <div class="col-sm-4">
+              <h1 style="font-size: 20px; text-align:center; margin-top:50px;">Rebekah</h1>
+              <p>This week I built and tested the DAC in cadence. I first tried
+              the topology provided in the paper and it had a large DNL. Therefore
+              I switched to a current mirror based technology and the DNL is now
+              less than 1 bit. I also studied the structure of the CCO and built
+              it based on the desired operating frequency.
+
+              On the other hand, I worked with Anil in understanding and improving
+              the algorithm in order to obtain a higher decoding accuracy.
+
+              This system now has components that are ready for a system level testing,
+              which will be the focus of next week's work.</p>
+            </div>
+            <div class="col-sm-4">
+              <h1 style="font-size: 20px; text-align:center; margin-top:50px;">Cody</h1>
+              <p>This week I worked on building and testing the schematics for the
+                digital portion of the system. It is mostly working by itself right
+                now but I need to make a few timing adjustments and also need to
+                do testing with the rest of the system</p>
+            </div>
+            <div class="col-sm-4">
+              <h1 style="font-size: 20px; text-align:center; margin-top:50px;">Anil</h1>
+              <p>This week I worked with Rebekah and sometimes on my own to improve
+                the decoding accuracy of our algorithm. I developed a new approach
+                to raise the decoding accuracy to ~70% from 60% for four class
+                classification</p>
+            </div>
+          </div>
+
+        </div>
+
 
     </div>
 
