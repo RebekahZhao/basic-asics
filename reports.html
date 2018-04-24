@@ -230,6 +230,77 @@
 
         </div>
 
+        <div class="col-sm-12"style="background-color:violet;">
+          <h2 style="font-size: 30px; margin-top: 100px;">Weekly Update 4/12/2018</h2>
+          <div class="row vdivide">
+            <div class="col-sm-4">
+              <h1 style="font-size: 20px; text-align:center; margin-top:50px;">Rebekah</h1>
+              <p>This week I worked on running Monte Carlo simulation of individual
+              transistors to make sure the tool kit we use is capable of performing
+              both process variation and mismatch. I also integrated the entire system
+              after Cody finished building the digital portion of the system. I set up
+              testbenches to study the influence of mismatch on a subsection of the system.
+              I also put together a smaller version of the entire system to study how
+              to dump outputs for Monte Carlo and post-processing</p>
+            </div>
+            <div class="col-sm-4">
+              <h1 style="font-size: 20px; text-align:center; margin-top:50px;">Cody</h1>
+              <p>This week I finished building the schematics for the digital portion
+                of the system as well as testing and verifying functionality.</p>
+              <p>I also wrote matlab and verilog code for generating the input
+                vectors to the system from the raw data</p>
+            </div>
+            <div class="col-sm-4">
+              <h1 style="font-size: 20px; text-align:center; margin-top:50px;">Anil</h1>
+              <p>This week I finished hyperparameters adjustments and finalized
+                the decisions for several size parameters of the circuit,
+                taking power consumption and accuracy in consideration. Some of
+                these decisions included the window_counter moving array size,
+                number of hidden layer nodes etc. I wrote Matlab code to verify
+                the adjustment of the activation function within the hidden layer
+                and optimized it with respect to decoding accuracy. Currently
+                working on how to dump/read Monte Carlo analysis from Cadence back
+                into Matlab for testing purposes.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-sm-12"style="background-color:salmon;">
+          <h2 style="font-size: 30px; margin-top: 100px;">Weekly Update 4/19/2018</h2>
+          <div class="row vdivide">
+            <div class="col-sm-4">
+              <h1 style="font-size: 20px; text-align:center; margin-top:50px;">Rebekah</h1>
+              <p>This week Cody and I worked on debugging the nominal performance of the
+                 overall system. The largest challenge we faced was simulation time.
+                 We tried spectre and ultrasim with analog and mixed signal simulation
+                 mode, each taking a long time (hours). We managed to verify the nominal
+                 behavior of the circuit eventually.</p>
+            </div>
+            <div class="col-sm-4">
+              <h1 style="font-size: 20px; text-align:center; margin-top:50px;">Cody</h1>
+              <p>This week I worked with Rebekah in debugging a scaled down version
+                of our design (there was an issue in our interpretation of the output
+                signals as well as a timing issue of reset signals). I believe we've
+                resolved the bugs for now.</p>
+
+              <p>In addition, I've been working on running simulations and modifying
+                simulation settings in order to run longer simulations while keeping
+                simulation times at reasonable lengths.</p>
+
+            </div>
+            <div class="col-sm-4">
+              <h1 style="font-size: 20px; text-align:center; margin-top:50px;">Anil</h1>
+              <p>This week I worked to improve the decoding accuracy of our algorithm
+                by other hyperparameter optimization techniques and adding more
+                post-processing layers in the Matlab section. I’ve tested input
+                vectors that are all going in the same direction, and in the process
+                of putting appropriate padding in between turns during data analysis.</p>
+            </div>
+          </div>
+
+        </div>
+
 
     </div>
 
